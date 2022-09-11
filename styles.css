@@ -1,14 +1,35 @@
 #cs1300-gallery {
-  background-color: lightblue;
+  background-color: burlywood;
 }
 
 /* Uncomment below if images are way too big.
 Selects all image tags and makes them 500px;
  */
-/*img {*/
-/*  width: 500px;*/
-/*}*/
+img {
+  margin: 10px;
+  width: 500px;
+}
 
 .gallery-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  overflow-x: scroll;
+}
+
+button {
+  background-color: lightcoral;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding: 20px;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#genusElement {
+  display: flex;
 }

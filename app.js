@@ -29,12 +29,16 @@ const updatePage = async () => {
   // console.log(fruitsArray);
 
   // TODO: Use either `map` and/or `filter` to extract some data from the array of fruit objects
-  // For example, find "name of all fruits whose sugar > 15",
+  const genusArray = fruitsArray.map((fruit) => { return " " + fruit["genus"]; } );
+  console.log(genusArray);
 
   // TODO: Create a new HTML element to display your data
+  const genusElement = document.createElement('genusElement');
+  genusElement.innerHTML = "Fruit Genuses: " + genusArray;
 
   // TODO: Append your new element to the page
-
+  const existingElement = document.getElementById('cs1300-gallery');
+  existingElement.append(genusElement);
 }
 
 // SAMPLE CODE of how to create and append a new HTML element to the page
